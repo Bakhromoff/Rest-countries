@@ -38,7 +38,7 @@
 :root {
   --text-color: #111517;
   --items-bg-color: #ffffff;
-  --boody-bg-color: #f2f2f2;
+  --body-bg-color: #f2f2f2;
 }
 
 html {
@@ -63,8 +63,8 @@ body {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.14;
-  background-color: #fff;
-  color: #111517;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
 }
 
 img {
@@ -80,6 +80,51 @@ img {
   padding-right: 80px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* HEADER */
+
+.site-header {
+}
+.site-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 24px;
+  background-color: var(--items-bg-color);
+}
+.logo-link {
+  display: flex;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.logo-heading {
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--text-color);
+}
+.dark-mode-button {
+  display: flex;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-color);
+}
+.dark-mode-button::before{
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: url(../img/moon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 11px;
 }
 
 /* MAIN CONTENT */
