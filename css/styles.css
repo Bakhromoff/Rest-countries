@@ -273,3 +273,93 @@ img {
   font-weight: 300;
   color: var(--text-color);
 }
+/* BELGIUM */
+
+.back-link {
+  display: flex;
+  width: 136px;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-right: 39px;
+  padding-bottom: 10px;
+  padding-left: 33px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-color);
+  background-color: var(--items-bg-color);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
+  border-radius: 6px;
+  margin-bottom: 80px;
+}
+.back-link::before{
+  display: flex;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: url(../img/back.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+.belgium-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.belgium-img {
+  width: 560px;
+  height: 401px;
+  margin-right: 120px;
+  box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.0294384);
+  border-radius: 10px;
+}
+.about-belgium {
+  max-width: 598px;
+}
+.about-belgium-heading {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+.more-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.information-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2;
+}
+.information-text-first{
+  margin-right: 141px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2;
+}
+.information-text-thin {
+  font-weight: 300;
+
+}
+.border-countries {
+  display: flex;
+  align-items: center;
+}
+.border-countries-link {
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 5px 27px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
+  border-radius: 2px;
+  background-color: var(--items-bg-color);
+  color: var(--text-color);
+}
+.border-countries-link:nth-child(1n){
+  margin-left: 15px;
+
+
+}
