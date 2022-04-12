@@ -9,14 +9,134 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="site-header-container container">
-<a class="logo-link" href="index.html">
-  <h2 class="logo-heading">Where in the world?</h2>
-</a>
-<button class="dark-mode-button" type="button">Dark Mode</button>
-  </div>
-</header>
-  <script src="js/main.js"></script>
-</body>
-</html>
+  <header class="site-header">
+    <div class="site-header-container container">
+      <a class="logo-link" href="index.html">
+        <h2 class="logo-heading">Where in the world?</h2>
+      </a>
+      <button class="dark-mode-button" type="button">Dark Mode</button>
+    </div>
+  </header>
+  <main class="main-section">
+    <div class="container">
+      <div class="main-content">
+        <form class="countries-search-form" action="https://echo.htmlacademy..ru" method="get" >
+          <div>
+            <input class="countries-search-input" type="text" placeholder="Search for a country…" required>
+          </div>
+          <div>
+            <input class="countries-list-input" list="countries" name="countries" placeholder="Filter by Region">
+            <datalist id="countries">
+              <option class="datalist-option" value="Africa">
+                <option class="datalist-option" value="America">
+                  <option class="datalist-option" value="Asia">
+                    <option class="datalist-option" value="Europe">
+                      <option class="datalist-option" value="Oceania">
+                      </div>
+                    </form>
+                    <ul class="countries-list">
+                      <li class="countries-list-item">
+                        <img class="country-img" src="img/germany.svg" alt="flag of germany" width="264" height="160">
+                        <div class="country-info">
+                          <a class="country-name-link" href="#"><h3 class="country-name">Germany</h3></a>
+                          <p class="population">Population: <span class="population-number">81,770,900</span></p>
+                          <div class="region">Region: <a class="region-link" href="#">Europe</a></div>
+                          <div class="capital">Capital: <a class="capital-link" href="#">Berlin</a></div>
+                        </div>
+                      </li>
+                      <li class="countries-list-item">
+                        <img class="country-img" src="img/usa.svg" alt="flag of usa" width="264" height="160">
+                        <div class="country-info">
+                          <a class="country-name-link" href="#">
+                            <h3 class="country-name">United States of America</h3>
+                          </a>
+                          <p class="population">Population: <span class="population-number">323,947,000</span></p>
+                          <div class="region">Region: <a class="region-link" href="#">Americas</a></div>
+                          <div class="capital">Capital: <a class="capital-link" href="#">Washington.D.C</a>
+                          </div>
+                        </div>
+
+                      </li>
+                      <li class="countries-list-item">
+                        <img class="country-img" src="img/brazil.svg" alt="flag of brazil" width="264" height="160">
+                        <div class="country-info">
+                          <a class="country-name-link" href="#">
+                            <h3 class="country-name">Brazil</h3>
+                          </a>
+                          <p class="population">Population: <span class="population-number">206,135,893</span></p>
+                          <div class="region">Region: <a class="region-link" href="#">Americas</a></div>
+                          <div class="capital">Capital: <a class="capital-link" href="#">Brasilia</a>
+                          </div>
+                        </div>
+
+                      </li>
+                      <li class="countries-list-item">
+                        <img class="country-img" src="img/iceland.svg" alt="flag of iceland" width="264" height="160">
+                        <div class="country-info">
+                          <a class="country-name-link" href="#">
+                            <h3 class="country-name">Iceland</h3>
+                          </a>
+                          <p class="population">Population: <span class="population-number">334,300</span></p>
+                          <div class="region">Region: <a class="region-link" href="#">Europe</a></div>
+                          <div class="capital">Capital: <a class="capital-link" href="#">Reykjavík</a>
+                          </div>
+                        </div>
+
+                      </li>
+                      <li class="countries-list-item">
+                        <img class="country-img" src="img/afghanistan.svg" alt="flag of afghanistan" width="264" height="160">
+                        <div class="country-info">
+                          <a class="country-name-link" href="#">
+                            <h3 class="country-name">Afghanistan</h3>
+                          </a>
+                          <p class="population">Population: <span class="population-number">27,657,145</span></p>
+                          <div class="region">Region: <a class="region-link" href="#">Asia</a></div>
+                          <div class="capital">Capital: <a class="capital-link" href="#">Kabul</a>
+                          </div>
+                        </div>
+
+                      </li>
+                      <li class="countries-list-item">
+                        <img class="country-img" src="img/island.svg" alt="flag of island" width="264" height="160">
+                        <div class="country-info">
+                          <a class="country-name-link" href="#">
+                            <h3 class="country-name">Åland Islands</h3>
+                          </a>
+                          <p class="population">Population: <span class="population-number">28,875</span></p>
+                          <div class="region">Region: <a class="region-link" href="#">Europe</a></div>
+                          <div class="capital">Capital: <a class="capital-link" href="#">Mariehamn</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="countries-list-item">
+                        <img class="country-img" src="img/albania.svg" alt="flag of island" width="264" height="160">
+                        <div class="country-info">
+                          <a class="country-name-link" href="#">
+                            <h3 class="country-name">Albania</h3>
+                          </a>
+                          <p class="population">Population: <span class="population-number">2,886,026</span></p>
+                          <div class="region">Region: <a class="region-link" href="#">Europe</a></div>
+                          <div class="capital">Capital: <a class="capital-link" href="#">Tirana</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="countries-list-item">
+                        <img class="country-img" src="img/algeria.svg" alt="flag of island" width="264" height="160">
+                        <div class="country-info">
+                          <a class="country-name-link" href="#">
+                            <h3 class="country-name">Algeria</h3>
+                          </a>
+                          <p class="population">Population: <span class="population-number">40,400,000</span></p>
+                          <div class="region">Region: <a class="region-link" href="#">Africa</a></div>
+                          <div class="capital">Capital: <a class="capital-link" href="#">Algiers</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </main>
+            <script src="js/main.js"></script>
+          </body>
+          </html>
