@@ -14,25 +14,27 @@
       <a class="logo-link" href="index.html">
         <h2 class="logo-heading">Where in the world?</h2>
       </a>
-      <button class="dark-mode-button" type="button">Dark Mode</button>
+      <button class="dark-mode-button" type="button">
+      <span class="button-inner">
+        <svg class="darkmode-button-icon" width="18" height="17"  xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z" fill="#fff" stroke=currentColor stroke-width="1.25"/></svg>
+        <span class="button-text">Dark Mode</span>
+      </span>
+      </button>
     </div>
   </header>
   <main class="main-section">
     <div class="container">
       <div class="main-content">
-        <form class="countries-search-form" action="https://echo.htmlacademy..ru" method="get" >
-          <div>
-            <input class="countries-search-input" type="text" placeholder="Search for a country…" required>
-          </div>
-          <div>
-            <input class="countries-list-input" list="countries" name="countries" placeholder="Filter by Region">
-            <datalist id="countries">
-              <option class="datalist-option" value="Africa">
-                <option class="datalist-option" value="America">
-                  <option class="datalist-option" value="Asia">
-                    <option class="datalist-option" value="Europe">
-                      <option class="datalist-option" value="Oceania">
-                      </div>
+        <form class="countries-search-form" action="https://echo.htmlacademy.ru" method="get" >
+            <input class="countries-search-input" type="search" name="search" placeholder="Search for a country…" aria-label="countries name" required>
+            <select class="regions-select" name="regions-select-name" aria-label="regions select">
+              <option value="" disabled="" selected="" aria-invalid="false">Filter by Region:</option>
+              <option>Africa</option>
+              <option>America</option>
+              <option>Asia</option>
+              <option>Europe</option>
+              <option>Oceania</option>
+            </select>
                     </form>
                     <ul class="countries-list">
                       <li class="countries-list-item">
@@ -131,7 +133,6 @@
                           <div class="capital">Capital: <a class="capital-link" href="#">Algiers</a>
                           </div>
                         </div>
-                      </div>
                     </li>
                   </ul>
                 </div>

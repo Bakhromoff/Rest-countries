@@ -89,11 +89,13 @@ img {
   --placeholder-color: #ffffff;
 }
 
+
 /* HEADER */
 
 .site-header {
   background-color: var(--items-bg-color);
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06);
+  white-space: nowrap;
 }
 .site-header-container {
   display: flex;
@@ -106,6 +108,14 @@ img {
   display: flex;
   margin-right: 30px;
   text-decoration: none;
+  transition: transform 0.5s ease;
+  flex-shrink: 0;
+}
+.logo-link:hover{
+  transform: scale(1.1);
+}
+.logo-link:active{
+  opacity: 0.7;
 }
 .logo-heading {
   margin: 0;
@@ -117,23 +127,41 @@ img {
 }
 .dark-mode-button {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 0;
+  padding: 5px;
   border: 0;
   background-color: transparent;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
   color: var(--text-color);
+  transition: transform 0.4s ease,
+  opacity 0.4s ease, border-radius 0.4s ease;
 }
-.dark-mode-button::before{
+
+.dark-mode-button:hover{
+  background-color: var(--text-color);
+  color: var(--items-bg-color);
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+.dark-mode-button:active{
+  opacity: 0.7;
+}
+.button-inner {
+  display: flex;
+  align-items: center;
+}
+.darkmode-button-icon {
   width: 20px;
   height: 20px;
-  content: "";
-  background-image: url(../img/moon.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 11px;
+  margin-right: 8px;
+}
+.button-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /* MAIN CONTENT */
@@ -157,9 +185,7 @@ img {
 
 .countries-search-input {
   display: block;
-  padding-left: 74px;
-  padding-right: 270px;
-  min-height: 56px;
+  padding: 18px 270px 18px 32px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
@@ -172,32 +198,16 @@ img {
 .countries-search-input::placeholder{
   color: var(--placeholder-color);
 }
-.countries-search-input::before{
-  width: 18px;
-  height: 18px;
-  content: "";
-  background-image: url(../img/icon-search.svg);
-  background-position: 32px center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.countries-list-input {
-  padding-left: 24px;
-  min-height: 56px;
+.regions-select {
+  display: block;
+  padding: 18px 77px 18px 24px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.43;
-  color: var(--placeholder-color);
+  line-height: 20px;
+  color: var(--text-color);
   box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
   border: 0;
   border-radius: 5px;
-  background-color: var(--items-bg-color);
-}
-.countries-list-input::placeholder{
-  color: var(--placeholder-color);
-}
-
-.datalist-option{
   background-color: var(--items-bg-color);
 }
 
@@ -208,6 +218,8 @@ img {
   flex-wrap: wrap;
   padding: 0;
   margin-left: -74px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .countries-list-item {
   list-style: none;
@@ -231,6 +243,12 @@ img {
 .country-name-link {
   text-decoration: none;
   color: var(--text-color);
+}
+.country-name-link :hover{
+  opacity: 0.8;
+}
+.country-name-link :active{
+  opacity: 0.6;
 }
 .country-name {
   margin-top: 0;
@@ -262,6 +280,12 @@ img {
   font-weight: 300;
   color: var(--text-color);
 }
+.region-link:hover {
+  font-weight: 800;
+}
+.region-link:active{
+  opacity: 0.8;
+}
 .capital {
   margin: 0;
   font-weight: 600;
@@ -273,17 +297,21 @@ img {
   font-weight: 300;
   color: var(--text-color);
 }
+.capital-link:hover{
+  font-weight: 800;
+}
+.capital-link :active{
+  opacity: 0.8;
+}
 /* BELGIUM */
 
-.back-link {
+.back-button {
   display: flex;
+  align-items: center;
   width: 136px;
   text-decoration: none;
   padding-top: 10px;
-  padding-right: 39px;
-  padding-bottom: 10px;
-  padding-left: 33px;
-  font-weight: 300;
+  padding: 10px 39px 10px 33px;
   font-size: 16px;
   line-height: 1.25;
   color: var(--text-color);
@@ -291,16 +319,20 @@ img {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
   border-radius: 6px;
   margin-bottom: 80px;
+  transition: transform 0.7s ease, color 0.7s ease,
+    opacity 0.7s ease, background-color 0.7s ease;
 }
-.back-link::before{
-  display: flex;
-  width: 20px;
-  height: 20px;
-  content: "";
-  background-image: url(../img/back.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-right: 10px;
+.back-button:hover{
+  transform: scale(1.2);
+  background-color: var(--text-color);
+  color: var(--items-bg-color);
+}
+.back-button:active{
+  opacity: 0.6;
+}
+.back-button-img{
+  margin-right: 11px;
+  display: inline-flex;
 }
 .belgium-content {
   display: flex;
@@ -357,9 +389,14 @@ img {
   border-radius: 2px;
   background-color: var(--items-bg-color);
   color: var(--text-color);
+  transition: transform 0.6s ease,
+    background-color 0.6s ease, color 0.6s ease ;
 }
 .border-countries-link:nth-child(1n){
   margin-left: 15px;
-
-
+}
+.border-countries-link:hover{
+  transform: scale(1.1);
+  background-color: var(--text-color);
+  color: var(--items-bg-color);
 }
