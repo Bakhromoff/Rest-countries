@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Nunito Sans";
-  src: url("../fonts/") format("woff2"),
+  src: url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
       url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -52,6 +52,11 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+*:focus{
+  outline: 2px solid var(--text-color);
+  outline-offset: 3px;
 }
 
 body {
@@ -131,6 +136,7 @@ img {
   align-items: center;
   padding: 5px;
   border: 0;
+  border-radius: 6px;
   background-color: transparent;
   font-weight: 600;
   font-size: 16px;
@@ -275,47 +281,37 @@ img {
   font-size: 14px;
   line-height: 1.14;
 }
-.region-link {
-  text-decoration: none;
+.region-name {
   font-weight: 300;
   color: var(--text-color);
 }
-.region-link:hover {
-  font-weight: 800;
-}
-.region-link:active{
-  opacity: 0.8;
-}
+
 .capital {
   margin: 0;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.14;
 }
-.capital-link {
-  text-decoration: none;
+.capital-name {
   font-weight: 300;
   color: var(--text-color);
 }
-.capital-link:hover{
-  font-weight: 800;
-}
-.capital-link :active{
-  opacity: 0.8;
-}
 /* BELGIUM */
+.belgium-main-content{
+  padding-top: 80px;
+  padding-bottom: 343px;
+}
 
 .back-button {
   display: flex;
   align-items: center;
   width: 136px;
   text-decoration: none;
-  padding-top: 10px;
   padding: 10px 39px 10px 33px;
   font-size: 16px;
   line-height: 1.25;
   color: var(--text-color);
-  background-color: var(--items-bg-color);
+  background-color: var(--body-bg-color);
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.293139);
   border-radius: 6px;
   margin-bottom: 80px;
@@ -342,7 +338,7 @@ img {
 .belgium-img {
   width: 560px;
   height: 401px;
-  margin-right: 120px;
+  margin-right: 30px;
   box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.0294384);
   border-radius: 10px;
 }
@@ -361,25 +357,49 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-bottom: 68px;
 }
-.information-text {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 2;
-}
-.information-text-first{
-  margin-right: 141px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 2;
-}
-.information-text-thin {
-  font-weight: 300;
 
+.more-information-left{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 30px;
+  width: 207px;
 }
+.left-information-item{
+  display: flex;
+  align-items: center;
+}
+dt {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+}
+dd {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  margin: 0;
+}
+.more-information-right{
+  margin: 0;
+  width: 249px;
+}
+.right-information-item{
+  display: flex;
+  align-items: center;
+}
+
 .border-countries {
   display: flex;
   align-items: center;
+}
+.information-text{
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
 }
 .border-countries-link {
   text-decoration: none;
@@ -387,12 +407,15 @@ img {
   padding: 5px 27px;
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.104931);
   border-radius: 2px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
   background-color: var(--items-bg-color);
   color: var(--text-color);
   transition: transform 0.6s ease,
     background-color 0.6s ease, color 0.6s ease ;
 }
-.border-countries-link:nth-child(1n){
+.french {
   margin-left: 15px;
 }
 .border-countries-link:hover{
