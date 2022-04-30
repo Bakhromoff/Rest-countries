@@ -183,15 +183,23 @@ img {
 
 }
 .countries-search-form {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 48px;
 }
+.search-icon-img{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 32px;
+  top: 19px;
+}
 
 .countries-search-input {
   display: block;
-  padding: 18px 270px 18px 32px;
+  padding: 18px 270px 18px 74px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.43;
